@@ -34,7 +34,13 @@ function pagina() {
 }
 
 function openPage() {
-    document.getElementById('pagecart').addEventListener('click', function(){
+    const cart = document.getElementById('pagecart')
+    const comprar = document.querySelector('.comprar')
+
+    cart.addEventListener('click', function(){
+    pagina()
+    })
+    comprar.addEventListener('click', function(){
     pagina()
     })
 }
